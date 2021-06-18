@@ -1,98 +1,52 @@
-<html>
-	<head>
-		<title>
-			Attachment Aditya
-		</title>
-		<link rel="stylesheet" href="style.css">
-		<script type="text/javascript" src="script.js"></script>
-		
-		<!-- HTML Meta Tags -->
-		<title>
-					Attachment Aditya
-				</title>
-		<meta name="description" content="Attachment Aditya is the creator of Attachment Studios and is a great Game Developer and coder.">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://attachment-studios.github.io/Attachment-Aditya">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="
+<head>
+    <title>Aditya</title>
+    <link rel="fav icon" href="Attachment Aditya.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="description"
+        content="Attachment Aditya is the creator of Attachment Studios and is a great Game Developer and coder.">
+    <meta property="og:url" content="https://attachment-studios.github.io/Attachment-Aditya">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="
 					Attachment Aditya
 				">
-		<meta property="og:description" content="Attachment Aditya is the creator of Attachment Studios and is a great Game Developer and coder.">
-		<meta property="og:image" content="https://raw.githubusercontent.com/Attachment-Studios/Attachment-Aditya/main/Social Preview.png">
-
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content="attachment-studios.github.io">
-		<meta property="twitter:url" content="https://attachment-studios.github.io/Attachment-Aditya">
-		<meta name="twitter:title" content="
+    <meta property="og:description"
+        content="Attachment Aditya is the creator of Attachment Studios and is a great Game Developer and coder.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Attachment-Studios/Attachment-Aditya/main/Social Preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="attachment-studios.github.io">
+    <meta property="twitter:url" content="https://attachment-studios.github.io/Attachment-Aditya">
+    <meta name="twitter:title" content="
 					Attachment Aditya
 				">
-		<meta name="twitter:description" content="Attachment Aditya is the creator of Attachment Studios and is a great Game Developer and coder.">
-		<meta name="twitter:image" content="https://raw.githubusercontent.com/Attachment-Studios/Attachment-Aditya/main/Social Preview.png">
+    <meta name="twitter:description"
+        content="Attachment Aditya is the creator of Attachment Studios and is a great Game Developer and coder.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Attachment-Studios/Attachment-Aditya/main/Social Preview.png">
+</head>
 
-		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
-	</head>
-	<body>
-		<br><br><br><br><br><br><br><br><div class="title">
-			<center>
-				<h1>Attachment Aditya</h1>
-			</center>
-		</div><br><br><br><br><br><br>
-		<div class="resume">
-			<div class="contact">
-				<h3>
-					Say Hi!
-				</h3>
-				<p>
-					<button>MAIL</button>
-					<button>DISCORD</button>
-				</p>
-			</div><br>
-			<div class="bio">
-				<h3>
-					Thinks
-				</h3>
-				<p>
-					I'm a <strong>good thinker</strong> with the will to convert my dreams, emotions, expressions, thoughts and all other stuff going inside my brain into code that can execute it and make it true. 
-					With <strong>no limit to imagination</strong>, I can create apps and games I wish to. 
-					Although I might get multiple and frequent errors in a specific project, but that gives me more experience. 
-					I express and feel the <strong>positive side</strong> of me and the environment around me.
-				</p>
-			</div><br>
-			<div class="exp">
-				<h3>
-					Profession and Experience
-				</h3>
-				<p>
-					<strong>Professions</strong>:
-					<br> => Game Development
-					<br> => Programming
-					<br> => Web Development
-					<br> => Video Editor
-					<br><br><strong>Programming Languages</strong>:
-					<br> => Lua
-					<br> => Python
-					<br> => HTML
-					<br> => CSS
-					<br> => JavaScript
-					<br> => Ruby
-					<br> => MarkDown
-					<br> => Java
-					<br><br><strong>Certificates</strong>:<br>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Coding Fundamentals.pdf');">Coding Fundamentals I</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Coding Fundamentals II.pdf');">Coding Fundamentals II</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Using A Code Editor.pdf');">Using A Code Editor</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Intro To Webpages.pdf');">Intro To Webpages</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Intro To Interviewing.pdf');">Intro To Interviewing</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Array Methods.pdf');">Array Methods</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Animations.pdf');">Animations I</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Animations II.pdf');">Animations II</button>
-					<button onclick="window.open('Certificates/Grasshopper(JS)/Grasshopper - Certificate - Automation.pdf');">Automation</button>
-					<button onclick="window.open('Certificates/LinkedIn/LinkedIn - Certificate - Learning Java.pdf');">Learning Java</button>
-					<button onclick="window.open('https://code.org/printcertificate/_1_25f7df5d80e6544483e716b2df4490d1');">The Hour of Code(Built Chatbox)</button>
-				</p>
-			</div><br>
-		</div>
-	</body>
+<body>
+    <div>
+        <h1 id="name"></h1>
+    </div>
+    <div class="bg"></div>
+</body>
+
+<script>
+    let count = 0;
+    let nameInterval = window.setInterval(() => {
+        generateName();
+        if (count > 14) {
+            window.clearInterval(nameInterval);
+            document.getElementById('name').parentNode.innerHTML = `<sm style="letter-spacing: 10px; position: relative; top: 30%; font-size: 150%;">Attachment</sm><br><h1><clicky style='cursor: pointer;' onclick="action();">ADITYA</clicky></h1>`;
+        } else {
+            count = count + 1;
+        }
+    }, 750);
+</script>
+
 </html>
