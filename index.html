@@ -30,19 +30,35 @@
 </head>
 
 <body>
+    <h1 id="count">1</h1>
     <div>
-        <h1 id="name"></h1>
+        <h1 id="name">ADITYA</h1>
     </div>
     <div class="bg"></div>
 </body>
 
 <script>
+    function getCookieValue(name) {
+        let result = document.cookie.match("(^|[^;]+)\\s*" + name + "\\s*=\\s*([^;]+)")
+        return result ? result.pop() : ""
+    }
+
+    function view_count() {
+        if (getCookieValue("COUNT") == "") {
+            document.cookie = "COUNT=0;";
+        }
+        document.cookie = "COUNT=" + (Number(getCookieValue("COUNT")) + 1) + ";";
+        document.getElementById('count').innerHTML = getCookieValue("COUNT");
+    }
+
+    view_count();
+
     let count = 0;
     let nameInterval = window.setInterval(() => {
         generateName();
-        if (count > 14) {
+        if (count > 6) {
             window.clearInterval(nameInterval);
-            document.getElementById('name').parentNode.innerHTML = `<sm style="letter-spacing: 10px; position: relative; top: 30%; font-size: 150%;">Attachment</sm><br><h1><clicky style='cursor: pointer;' onclick="action();">ADITYA</clicky></h1>`;
+            document.getElementById('name').parentNode.innerHTML = `<sm style="letter-spacing: 10px; position: relative; top: 30%; font-size: 150%;">Attachment</sm><br><h1 style='cursor: pointer;' onclick="action();" id="name">ADITYA</h1>`;
         } else {
             count = count + 1;
         }
